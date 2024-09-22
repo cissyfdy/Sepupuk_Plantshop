@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  --color1: #a1947e;
+  --color2: #e8d5b6;
+  --color3: #f6e7cc;
+  --color4: #b7c8ac;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  background-color: var(--color4);
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .logo img {
+  width: 4rem;
+  margin-inline: 1rem 0.02rem;
+}
+
+nav .title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+nav .menu {
+  display: flex;
+  align-items: center;
+}
+
+nav .menu .nav-bar {
+  display: flex;
+  gap: 2rem;
+  padding-block: 1.8rem;
+  padding-inline: 1.5rem;
+  font-size: 1.3rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav .menu .nav-bar li a {
+  color: black;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+nav .menu .nav-bar a:hover {
+  text-decoration: underline;
+  background-color: var(--color1);
+  border: solid black;
+  border-radius: 999px;
+  padding-block: 0.6rem;
+  padding-inline: 0.8rem;
+}
+
+nav .hamburger a img {
+  width: 2rem;
+  display: none;
+}
+
+main {
+  display: flex;
+}
+
+main .article-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: center;
+  padding-block: 12rem;
+  background-color: var(--color2);
+}
+
+.hero h1 {
+  font-weight: 900;
+  font-size: 5rem;
+  background: linear-gradient(to right, var(--color4), #333);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+}
+
+.hero p {
+  font-weight: 700;
+  font-size: 1.7rem;
+
+  overflow: hidden;
+  white-space: nowrap;
+  animation: motto 4s steps(50, end) infinite;
+}
+
+.article-1 .hero-image img {
+  width: 30rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 139px 139px 200px 0px;
+  -webkit-border-radius: 139px 139px 200px 0px;
+  -moz-border-radius: 139px 139px 200px 0px;
+}
+
+.article-2 {
+  background-color: var(--color1);
+  display: flex;
+  width: 100%;
+}
+
+.article-2 .about-container {
+  width: 70%;
+  padding-inline: 10rem;
+  padding-block: 8rem;
+  gap: 10rem;
+}
+
+.article-2 .about-container h2 {
+  margin-block: 2rem;
+  font-size: 3rem;
+}
+
+.article-2 .about-container p {
+  color: white;
+  font-weight: 500;
+  line-height: 29px;
+  font-size: 1.2rem;
+}
+
+.article-2 aside {
+  background-color: var(--color3);
+  margin: 5rem;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+aside img {
+  width: 30rem;
+}
+
+aside {
+  text-align: center;
+  font-weight: 400;
+}
+
+.aside-desc {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.article-3 {
+  background-color: #eee;
+}
+
+.article-3 h2 {
+  font-size: 2rem;
+  padding-block: 8rem 0rem;
+  padding-inline: 18rem;
+}
+
+.article-3 .category {
+  display: flex;
+  justify-content: center;
+}
+
+.article-3 img {
+  width: 15rem;
+}
+
+.card {
+  background-color: white;
+  margin: 3rem 6rem;
+  padding-inline: 2rem;
+  padding-block: 1rem 5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card .discount {
+  background-color: var(--color3);
+  width: 5rem;
+  height: 5rem;
+  font-weight: 500;
+  font-size: 2rem;
+  padding-block: 1rem;
+  padding-inline: 0.3rem;
+  margin-block: 0.2rem 2rem;
+  border-radius: 50%;
+}
+
+span {
+  text-decoration: line-through;
+  color: red;
+  margin-left: 1rem;
+}
+
+.product-desc p {
+  margin-block: 1rem;
+  font-size: 2rem;
+}
+
+.button {
+  background-color: var(--color1);
+  border: none;
+  border-radius: 99px;
+  color: black;
+  font-weight: 600;
+  padding: 10px 19px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 3px solid black;
+  opacity: 0.5;
+  color: white;
+}
+
+.article-4 {
+  display: flex;
+  background-color: var(--color1);
+}
+
+.message {
+  background-color: white;
+  margin: 8rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.message table {
+  margin: 0 auto;
+}
+
+.message td {
+  padding: 1rem;
+}
+
+.message label {
+  font-weight: 400;
+  color: #888;
+}
+
+.message textarea {
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.button {
+  background-color: var(--color1);
+  border: none;
+  border-radius: 999px;
+  color: black;
+  font-weight: 600;
+  padding: 10px 19px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--color2);
+  opacity: 0.8;
+  color: white;
+}
+
+.info {
+  color: white;
+  margin-inline: auto;
+  margin-block: 14rem 10rem;
+}
+
+.info li {
+  line-height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.info i {
+  padding-right: 1rem;
+}
+
+input[type="text"],
+textarea {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+footer {
+  display: flex;
+  background-color: var(--color4);
+  justify-content: center;
+  align-items: center;
+}
+footer .copyright {
+  display: flex;
+  margin-block: 1.5rem;
+
+  text-align: center;
+  font-weight: 600;
+}
+
+@keyframes motto {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav .menu .nav-bar {
+    display: none;
+  }
+
+  .menu .hamburger a img {
+    margin-inline: 2rem;
+    display: flex;
+  }
+
+  main .article-1,
+  .article-2,
+  .article-4 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 10rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .category {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    justify-content: center;
+  }
+
+  .article-1 h1 {
+    font-size: 3rem;
+  }
+
+  .article-1 .hero-image img {
+    width: 18rem;
+  }
+
+  .hero .motto {
+    font-size: 1rem;
+  }
+
+  aside img {
+    width: 18rem;
+  }
+
+  .message {
+    width: 20rem;
+  }
+
+  .message input {
+    width: 7rem;
+  }
+}
