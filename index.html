@@ -206,10 +206,10 @@
                 </tr>
                 <tr></tr>
                   <td><label for="">Message</label></td>
-                  <td><textarea rows="4" cols="30" id="message"></textarea></td>
+                  <td><textarea rows="4" cols="30" id="pesan"></textarea></td>
                 </tr>
               </table>
-              <button class="button" id="submitButton">Send Message</button>
+              <input type="submit" value="Send Message">
               <p id='afterForm'></p>
             </form>
 
@@ -236,7 +236,7 @@
       submitAction.addEventListener('submit',function(a){
         const fullName = document.getElemenById('fullName').value;
         const email = document.getElemenById('email').value;
-        const message = document.getElemenById('message').value;
+        const message = document.getElemenById('pesan').value;
         const hiddenMessage = ('Thank You, Your form has been sent!');
 
         document.getElemenById('afterForm').innerText = hiddenMessage;
