@@ -210,6 +210,7 @@
                 </tr>
               </table>
               <button class="button" id="submitButton">Send Message</button>
+              <p id='afterForm'></p>
             </form>
 
             <div class="info">
@@ -229,5 +230,19 @@
           <p>SePupuk Plant Shop Indonesia &#169; 2024, by Dyandra Cissy</p>
         </div>
       </footer>
+
+    <script>
+      const submitAction = document.getElemenById('myForm');
+      submitAction.addEventListener('submit',function(a){
+        const fullName = document.getElemenById('fullName').value;
+        const email = document.getElemenById('email').value;
+        const message = document.getElemenById('message').value;
+        const hiddenMessage = ('Thank You, Your form has been sent!');
+
+        document.getElemenById('afterForm').innerText = hiddenMessage;
+        a.preventDefault()
+      });
+      
+    </script>
   </body>
 </html>
