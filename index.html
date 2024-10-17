@@ -239,7 +239,8 @@
         const message = document.getElemenById('pesan').value;
         
         event.preventDefault()
-        alert('Thank You, Your Data Has Been Sent!');
+        const hiddenMessage = 'Thank You, Your data has been Sent!';
+        document.getElementById('afterForm').innerText = hiddenMessage;
 
       });
       
