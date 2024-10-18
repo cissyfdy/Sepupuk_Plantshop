@@ -218,7 +218,7 @@ span {
   font-size: 2rem;
 }
 
-.button .submit {
+.button  {
   background-color: var(--color1);
   border: none;
   border-radius: 99px;
@@ -269,7 +269,8 @@ span {
   border: 1px solid #ddd;
 }
 
-.button {
+.button,
+.submit {
   background-color: var(--color1);
   border: none;
   border-radius: 999px;
@@ -282,7 +283,8 @@ span {
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.submit:hover{
   background-color: var(--color2);
   opacity: 0.8;
   color: white;
