@@ -218,7 +218,7 @@ span {
   font-size: 2rem;
 }
 
-.button {
+.button .submit {
   background-color: var(--color1);
   border: none;
   border-radius: 99px;
