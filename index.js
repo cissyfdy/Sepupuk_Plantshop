@@ -1,3 +1,4 @@
+windows.alert('HALO');
 const submitAction = document.getElementById('myForm');
       submitAction.addEventListener('submit',function(event){
         const fullName = document.getElementById('fullName').value;
@@ -5,6 +6,5 @@ const submitAction = document.getElementById('myForm');
         const message = document.getElementById('pesan').value;
         
         event.preventDefault();
-        windows.alert('Test');
 
       });
