@@ -1,4 +1,4 @@
-const submitAction = document.getElemenById('myForm');
+const submitAction = document.getElementById('myForm');
       submitAction.addEventListener('submit',function(event){
         const fullName = document.getElemenById('fullName').value;
         const email = document.getElemenById('email').value;
